@@ -45,20 +45,20 @@ console.log(weather);
     
     <button onClick={handleSearch}>Search</button>
     </div>
-    {isloading ?<p>Loading data...</p> : (Object.keys(weather).length >0 && <div className='cardsdiv'>
-      <div className='weather-cards'>
+    {isloading ?<p>Loading data...</p> : (Object.keys(weather).length >0 && <div className='weather-cards'>
+      <div className='weather-card'>
         <h4>Temperatue</h4>
         <p>{weather.temp_c}°C</p>
       </div>
-      <div className='weather-cards'>
+      <div className='weather-card'>
         <h4>Humitidy</h4>
         <p>{weather.humidity}%</p>
       </div>
-      <div className='weather-cards'>
+      <div className='weather-card'>
         <h4>Condition</h4>
         <p>{weather.condition.text}</p>
       </div>
-      <div className='weather-cards'>
+      <div className='weather-card'>
         <h4>Wind Speed</h4>
         <p>{weather.wind_kph} kph</p>
       </div>
