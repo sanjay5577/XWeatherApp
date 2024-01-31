@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+
+.cardsdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-card{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border: 1px solid gray;
+  width: 200px;
+}
